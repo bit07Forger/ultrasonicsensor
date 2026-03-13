@@ -1,17 +1,17 @@
 # Ultrasonic Distance Sensor Project
-### Arduino Uno + Ping))) Parallax Sensor + Servo Motor + LCD 16x2
+### Arduino Uno + Ping Parallax Sensor + Servo Motor + LCD 16x2
 
-This project measures distance using a Ping))) Parallax ultrasonic sensor, displays the reading on a 16x2 LCD, and moves a servo motor based on the detected distance.
+This project measures distance using a Ping Parallax ultrasonic sensor, displays the reading on a 16x2 LCD, and moves a servo motor based on the detected distance.
 
 ---
 
 ## Circuit Diagrams
 
-### Breadboard Layout
-![Breadboard Diagram](./breadboard-diagram.png)
+### Pin Connections 
+![alt text](<../Screenshot 2026-02-26 211644.png>)![alt text](<../Screenshot 2026-02-26 211552.png>)
 
 ### Schematic Diagram
-![Schematic Diagram](./schematic-diagram.png)
+![alt text](<../Screenshot 2026-02-26 215351.png>)
 
 ---
 
@@ -20,7 +20,7 @@ This project measures distance using a Ping))) Parallax ultrasonic sensor, displ
 | Component | Quantity |
 |-----------|----------|
 | Arduino Uno | 1 |
-| Ping))) Parallax Ultrasonic Sensor | 1 |
+| Ping Parallax Ultrasonic Sensor | 1 |
 | Servo Motor (SG90) | 1 |
 | LCD 16x2 (Standard, No I2C) | 1 |
 | Resistor 220Ω | 1 |
@@ -30,9 +30,9 @@ This project measures distance using a Ping))) Parallax ultrasonic sensor, displ
 
 ## Connections
 
-### Ping))) Parallax Sensor
+### Ping Parallax Sensor
 ```
-Ping))) Sensor Connections:
+Ping Sensor Connections:
 ├── 5V      → Arduino 5V
 ├── GND     → Arduino GND
 └── SIG     → Arduino Digital Pin 9
@@ -154,7 +154,7 @@ void loop() {
 
 ## How It Works
 
-1. The Ping))) sensor sends an ultrasonic pulse and measures the time it takes to bounce back
+1. The Ping sensor sends an ultrasonic pulse and measures the time it takes to bounce back
 2. The Arduino calculates the distance using the formula: `distance = (duration × 0.034) / 2`
 3. The distance is displayed on the LCD screen in centimeters
 4. If the object is **closer than 20 cm**, the servo rotates to **90°**
@@ -165,7 +165,7 @@ void loop() {
 ## Simulating in Tinkercad
 
 1. Start the simulation
-2. Click on the Ping))) sensor
+2. Click on the Ping sensor
 3. A distance slider will appear — drag it to simulate an object at different distances
 4. Watch the LCD update and the servo move in real time
 
@@ -176,6 +176,6 @@ void loop() {
 ```
 - Using standard 16x2 LCD (not I2C) as Tinkercad does not support LiquidCrystal_I2C library
 - VO pin connected to GND instead of potentiometer for contrast in simulation
-- Ping))) Parallax sensor used instead of HC-SR04 as it uses a single SIG pin
+- Ping Parallax sensor used instead of HC-SR04 as it uses a single SIG pin
 - Servo threshold set to 20 cm — modify in code as needed
 ```

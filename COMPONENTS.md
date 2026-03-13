@@ -38,6 +38,6 @@ This document lists all the hardware components used in the Ultrasonic Sensor pr
 | Component | Quantity | Description |
 |-----------|----------|-------------|
 | Resistors | - | For the lcd screen |
-| Capacitors | - | For filtering (if needed) |
+
 
 
